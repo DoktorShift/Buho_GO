@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Black and white base with blue accent */
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 185 50% 44%; /* Blue accent color */
+    --primary-foreground: 210 40% 98%;
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 185 50% 44%; /* Match primary for consistency */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 185 50% 44%; /* Keep same blue in dark mode */
+    --primary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 185 50% 44%; /* Match primary for consistency */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium tracking-tight;
+  }
+}
+
+/* Component-specific styles */
+@layer components {
+  /* App header with enhanced typography */
+  .app-header {
+    @apply bg-primary text-primary-foreground py-4 px-6 flex justify-between items-center;
+  }
+
+  /* Enhanced header typography */
+  .app-header h1 {
+    @apply font-bold tracking-tight text-2xl md:text-3xl;
+    letter-spacing: -0.02em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Card hover effect */
+  .card-hover {
+    @apply transition-all duration-200 hover:shadow-md hover:translate-y-[-2px];
+  }
+
+  /* Card content hover effect */
+  .card-content-hover {
+    @apply hover:bg-muted/30 dark:hover:bg-muted/20 transition-colors duration-200;
+  }
+
+  /* Gradient background (using primary color) */
+  .gradient-bg {
+    @apply bg-primary;
+  }
+
+  /* Enhanced gradient header typography */
+  .gradient-bg h1,
+  .gradient-bg h2,
+  .gradient-bg .card-title {
+    @apply font-bold tracking-tight;
+    letter-spacing: -0.02em;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Bottom navigation active state */
+  .bottom-nav-active {
+    @apply text-primary relative after:absolute after:bottom-0 after:left-1/2 after:-translate-x-1/2 after:w-1/2 after:h-0.5 after:bg-primary after:rounded-full;
+  }
+}
+
+/* Form element enhancements */
+@layer utilities {
+  /* Remove number input spinners */
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+}
+
+/* Custom styles for the app */
+.app-container {
+  max-width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wallet-container {
+  max-width: 500px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 1rem;
+  flex: 1;
+}
+
+.qr-container {
+  background-color: white;
+  padding: 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.balance-display {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+.wallet-name {
+  font-size: 1rem;
+  color: var(--muted-foreground);
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.currency-display {
+  font-size: 1.25rem;
+  color: #666;
+  text-align: center;
+  margin-top: -0.5rem;
+}
+
+.action-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 2rem 0;
+}
+
