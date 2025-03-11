@@ -1,3 +1,5 @@
+# ❗️Disclaimer: Early Alpha First Release.❗️
+
 # Buho Go
 
 Buho Go is a mobile-optimized web app designed to work seamlessly with Nostr Wallet Connect. It enables multi-connections, allowing you to connect to multiple NWC wallets or even nodes.
