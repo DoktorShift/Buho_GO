@@ -1,7 +1,3 @@
-Below is your updated README with a TO DO checklist directly after the title. The checklist now includes your new items along with the existing roadmap items.
-
----
-
 # ❗️Disclaimer: Early Alpha First Release.❗️
 
 # Buho Go
