@@ -1,6 +1,21 @@
+Below is your updated README with a TO DO checklist directly after the title. The checklist now includes your new items along with the existing roadmap items.
+
+---
+
 # ❗️Disclaimer: Early Alpha First Release.❗️
 
 # Buho Go
+
+## 🚧Roadmap / To-Do List🚧
+
+- [ ] **Backend:** Develop a more robust and proper backend.
+- [ ] **Transaction Timestamps:** Add logic to include timestamps when listing transactions.
+- [ ] **Payment Security:** Enable a PIN for payments that exceed a defined amount.
+- [ ] **Frontend Enhancements:** Clean up and improve the user interface.
+- [ ] **LNURL:** Make LNURL work.
+- [ ] **Lightning Addresses:** Make lightning addresses work.
+
+## Buho Go
 
 Buho Go is a mobile-optimized web app designed to work seamlessly with Nostr Wallet Connect. It enables multi-connections, allowing you to connect to multiple NWC wallets or even nodes.
 
@@ -10,12 +25,6 @@ Buho Go is a mobile-optimized web app designed to work seamlessly with Nostr Wal
 - **Mobile Optimized:** Enjoy a responsive and streamlined experience on mobile devices.
 - **Multi Connections:** Easily manage and switch between several wallet connections.
 
-## Roadmap & Improvements
-
-- **Backend:** Developing a more robust and proper backend.
-- **Transaction Timestamps:** Adding logic to include timestamps when listing transactions.
-- **Payment Security:** Enabling a PIN for payments that exceed a defined amount.
-- **Frontend Enhancements:** Continued cleanup and improvements to the user interface.
 
 ## Installation
 
@@ -46,4 +55,4 @@ Use Buho Go, contribute back to the project, and help us improve the experience 
 
 ## Acknowledgments
 
-Special thanks to [Supertestnet](https://github.com/supertestnet/nwcjs) for open source the code which this app is build on. 
+Special thanks to [Supertestnet](https://github.com/supertestnet/nwcjs) for open sourcing the code on which this app is built.
