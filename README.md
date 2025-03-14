@@ -8,7 +8,7 @@
 - [ ] **Transaction Timestamps:** Add logic to include timestamps when listing transactions.
 - [ ] **Payment Security:** Enable a PIN for payments that exceed a defined amount.
 - [ ] **Frontend Enhancements:** Clean up and improve the user interface.
-- [ ] **LNURL:** Make LNURL work.
+- [ ] **LNURL:** Make LNURLp work.
 - [ ] **Lightning Addresses:** Make lightning addresses work.
 
 ## Buho Go
