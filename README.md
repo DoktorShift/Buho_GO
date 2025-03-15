@@ -5,7 +5,7 @@
 ## 🚧Roadmap / To-Do List🚧
 
 - [ ] **Websocket:** Develop a robust and proper Websocket connection.
-- [] **Multi WAllet** Handle multiple Wallets correct when chaning them.
+- [ ] **Multi WAllet** Handle multiple Wallets correct when chaning them.
 - [ ] **Transaction Timestamps:** Add logic to include timestamps when listing transactions.
 - [ ] **Payment Security:** Enable a PIN for payments that exceed a defined amount.
 - [ ] **Frontend Enhancements:** Clean up and improve the user interface.
